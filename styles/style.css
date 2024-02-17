@@ -17,3 +17,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#ticket-bg {
+  background-image: url("../images/ticket_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 24px;
+}
+
+#ticket-gray {
+  background-image: url("../images/ticket_gray.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 24px;
+}
