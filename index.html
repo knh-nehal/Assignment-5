@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus Paribahan</title>
+    <!-- Fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +16,7 @@
         font-family: "Raleway", sans-serif;
       }
     </style>
+    <!-- CSS link -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -24,7 +26,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="raleway">
+    <!-- Header section -->
     <header class="container w-[81%] mx-auto">
+      <!-- NavBar -->
       <nav class="mb-9 mt-2">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -73,6 +77,7 @@
           </div>
         </div>
       </nav>
+      <!-- Banner section -->
       <div>
         <div
           id="bg-image"
@@ -93,7 +98,51 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main class="container w-[81%] mx-auto">
+      <!-- Best offer section -->
+      <section class="my-24">
+        <h2 class="text-center font-bold text-4xl">Best Offer For You</h2>
+        <div class="flex gap-6">
+          <div class="flex flex-1 my-12 rounded-3xl" id="coupon-1">
+            <div class="pl-10 flex flex-col justify-center w-[55%]">
+              <h3 class="text-3xl font-semibold">15% OFF</h3>
+              <p class="text-xl font-medium">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <div>
+              <img src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div class="flex flex-col justify-center text-center pl-8">
+              <h3 class="text-2xl font-semibold">NEW15</h3>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+          <div class="flex flex-1 my-12 rounded-3xl" id="coupon-2">
+            <div class="pl-10 flex flex-col justify-center w-[55%]">
+              <h3 class="text-3xl font-semibold">15% OFF</h3>
+              <p class="text-xl font-medium">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+            <div>
+              <img src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div
+              class="flex flex-col items-center justify-center text-center pl-8"
+            >
+              <h3 class="text-2xl font-semibold">NEW15</h3>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button class="btn border-[#1DD100] text-lime-500 bg-white">
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- Ticket Buy Section -->
+      <section></section>
+    </main>
     <footer></footer>
 
     <script src="./scripts/index.js"></script>
