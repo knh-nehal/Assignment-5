@@ -314,23 +314,26 @@
                 <div id="ticket-box"></div>
                 <div class="flex justify-between">
                   <h4>Total Price</h4>
-                  <h4>BDT <span>550</span></h4>
+                  <h4>BDT <span id="total-price">0</span></h4>
                 </div>
                 <div>
                   <label
                     class="input h-16 input-bordered flex items-center gap-2"
                   >
                     <input
+                      id="coupon-code"
                       type="text"
                       class="grow"
                       placeholder="Apply Coupon Code"
                     />
-                    <button class="btn text-white bg-lime-500">Apply</button>
+                    <button id="apply-btn" class="btn text-white bg-lime-500">
+                      Apply
+                    </button>
                   </label>
                 </div>
                 <div class="flex justify-between">
                   <h4>Grand Total</h4>
-                  <h4>BDT <span>550</span></h4>
+                  <h4>BDT <span id="grand-total">0</span></h4>
                 </div>
               </div>
               <div class="space-y-4">
