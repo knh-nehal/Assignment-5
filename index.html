@@ -70,7 +70,8 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="btn rounded-xl px-5 bg-[#1DD1001A] text-lime-500"
+            <a
+              class="btn border-[#1DD100] rounded-xl px-5 bg-[#1DD1001A] text-[#1DD100]"
               >Bus
               <img src="./images/bus-icon.png" alt="" />
             </a>
@@ -93,9 +94,12 @@
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
             </p>
-            <button class="btn bg-[#1DD100] text-black border-none">
+            <a
+              href="#ticket-bg"
+              class="btn bg-[#1DD100] text-black border-none"
+            >
               Buy Tickets
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -143,7 +147,9 @@
         </div>
       </section>
       <!-- Ticket Buy Section -->
-      <section class="bg-[#F7F8F8] mt-24">
+      <section
+        class="bg-[#F7F8F8] mt-24 rounded-t-[80px] border-t-2 border-lime-500"
+      >
         <div class="py-24 container w-[81%] mx-auto">
           <div>
             <h2 class="text-center font-bold text-4xl mb-6">Bus Paribahan</h2>
@@ -307,7 +313,7 @@
                     Seats
                     <span
                       id="ticket-box-num"
-                      class="bg-lime-500 text-white p-1 rounded-xl"
+                      class="bg-[#1DD100] text-white px-2 rounded-xl"
                       >0</span
                     >
                   </p>
@@ -321,6 +327,7 @@
                 </div>
                 <div>
                   <label
+                    id="coupon-input-box"
                     class="input h-16 input-bordered flex items-center gap-2"
                   >
                     <input
@@ -329,7 +336,11 @@
                       class="grow"
                       placeholder="Apply Coupon Code"
                     />
-                    <button id="apply-btn" class="btn text-white bg-lime-500">
+                    <button
+                      id="apply-btn"
+                      class="btn text-white bg-[#1DD100]"
+                      disabled
+                    >
                       Apply
                     </button>
                   </label>
@@ -364,7 +375,7 @@
                     placeholder="Enter your email id"
                   />
                 </label>
-                <button class="btn bg-lime-500 text-white w-full rounded-2xl">
+                <button class="btn bg-[#1DD100] text-white w-full rounded-2xl">
                   Next
                 </button>
               </div>

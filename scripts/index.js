@@ -45,17 +45,22 @@ for (const seat of seats) {
 
             let couponCode = document.getElementById("coupon-code");
 
-            document.getElementById("apply-btn").addEventListener("click", function () {
-                if (ticketSale === 4) {
+            if (ticketSale === 4) {
+                document.getElementById("apply-btn").removeAttribute("disabled");
+                document.getElementById("apply-btn").addEventListener("click", function () {
                     if (couponCode.value === "NEW15") {
                         document.getElementById("grand-total").innerText = parseInt(grandPrice) - 0.15 * parseInt(grandPrice);
+                        couponCode.value = "";
+                        document.getElementById("coupon-input-box").classList.add("hidden");
                     } else if (couponCode.value === "Couple 20") {
                         document.getElementById("grand-total").innerText = parseInt(grandPrice) - 0.20 * parseInt(grandPrice);
+                        couponCode.value = "";
+                        document.getElementById("coupon-input-box").classList.add("hidden");
                     } else {
-                        return
+                        alert("Enter Valid Coupon Please");
                     }
-                }
-            })
+                })
+            }
         } else {
             alert("You can't buy more than 4 tickets in a row..");
         }
