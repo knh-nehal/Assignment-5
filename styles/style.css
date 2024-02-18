@@ -25,8 +25,16 @@
   border-radius: 24px;
 }
 
-#ticket-gray {
+#ticket-gray,
+#ticket-final-bg {
   background-image: url("../images/ticket_gray.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 24px;
+}
+
+#seat-bg {
+  background-image: url("../images/ticket_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 24px;
