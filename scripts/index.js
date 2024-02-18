@@ -13,6 +13,8 @@ for (const seat of seats) {
             ticketSale++;
 
             let seatName = seat.innerText;
+            seat.disabled = true;
+            seat.classList.add("disabled:bg-[#1DD100]", "disabled:text-white");
 
             let p1 = document.createElement("p");
             p1.innerText = seatName;
