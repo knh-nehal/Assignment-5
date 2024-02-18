@@ -1,11 +1,3 @@
-#bg-image {
-  background-image: url("../images/Banner.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 515px;
-}
-
 #coupon-1 {
   background-image: url("../images/yellow_coupon.png");
   background-repeat: no-repeat;
