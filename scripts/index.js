@@ -1,9 +1,16 @@
 const seats = document.getElementsByClassName("seat");
 let ticketSale = 0;
 const ticketPrice = 550;
+let nameInput = document.getElementById("name-box")
+let numInput = document.getElementById("num-box")
+console.log(nameInput);
+console.log(numInput)
 
 for (const seat of seats) {
     seat.addEventListener('click', function () {
+        if (ticketSale <= 4) {
+            document.getElementById("next-btn").removeAttribute("disabled");
+        }
         if (ticketSale < 4) {
             seat.classList.add("bg-[#1DD100]", "text-white");
 
@@ -26,7 +33,7 @@ for (const seat of seats) {
             div.appendChild(p1);
             div.appendChild(p2);
             div.appendChild(p3);
-            div.classList.add("flex", "justify-between", "gap-10");
+            div.classList.add("flex", "justify-between", "items-center", "space-y-2");
 
             let ticketBox = document.getElementById("ticket-box");
             ticketBox.appendChild(div);
