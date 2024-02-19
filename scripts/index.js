@@ -52,7 +52,7 @@ for (const seat of seats) {
 
             let couponCode = document.getElementById("coupon-code");
 
-            document.getElementById("next-btn").removeAttribute("disabled");
+            // document.getElementById("next-btn").removeAttribute("disabled");
 
             if (ticketSale === 4) {
                 document.getElementById("apply-btn").removeAttribute("disabled");
