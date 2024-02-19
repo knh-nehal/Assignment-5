@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #coupon-1 {
   background-image: url("../images/yellow_coupon.png");
   background-repeat: no-repeat;

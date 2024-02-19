@@ -95,7 +95,7 @@
             </p>
             <a
               href="#ticket-main-section"
-              class="btn bg-[#1DD100] text-black border-none"
+              class="btn bg-[#1DD100] text-black border-none text-xl px-6"
             >
               Buy Tickets
             </a>
@@ -165,8 +165,8 @@
                     <img src="./images/bus-logo.png" alt="" />
                   </div>
                   <div>
-                    <h2>Grand Travels</h2>
-                    <p>Coach-009-WEB | AC Business</p>
+                    <h2 class="font-bold text-3xl">Grand Travels</h2>
+                    <p class="opacity-90">Coach-009-WEB | AC Business</p>
                   </div>
                 </div>
                 <div class="p-10 pr-0">
@@ -179,19 +179,21 @@
               <div class="pl-10">
                 <div class="my-6 p-10" id="ticket-gray">
                   <div class="flex justify-between border-b-2 border-dashed">
-                    <p class="mb-2">Route</p>
-                    <p>Dhaka-Sylhet</p>
+                    <p class="mb-2 opacity-90">Route</p>
+                    <p class="font-bold">Dhaka-Sylhet</p>
                   </div>
                   <div
                     class="flex items-center justify-between border-b-2 border-dashed"
                   >
-                    <p class="mb-2 mt-4">Departure Time</p>
-                    <p>9.00 PM</p>
+                    <p class="mb-2 mt-4 opacity-90">Departure Time</p>
+                    <p class="font-bold">9.00 PM</p>
                   </div>
-                  <div class="pt-6 space-x-4">
-                    <button class="btn">Boarding Point - Laxmipur</button>
-                    <button class="btn">Dropping Point - Bogura</button>
-                    <button class="btn">Est. Time - 11 Hour</button>
+                  <div class="pt-6 space-x-4 flex">
+                    <button class="btn flex-1">
+                      Boarding Point - Laxmipur
+                    </button>
+                    <button class="btn flex-1">Dropping Point - Bogura</button>
+                    <button class="btn flex-1">Est. Time - 11 Hour</button>
                   </div>
                 </div>
               </div>
@@ -349,18 +351,25 @@
                     </button>
                   </label>
                 </div>
+                <div
+                  id="discount-container"
+                  class="flex justify-between hidden border-b-2 border-dashed pb-4"
+                >
+                  <h4 class="font-bold">Discounted Price</h4>
+                  <h4 class="font-bold">
+                    BDT <span id="discount-price">0</span>
+                  </h4>
+                </div>
                 <div class="flex justify-between">
                   <h4 class="font-bold">Grand Total</h4>
                   <h4 class="font-bold">BDT <span id="grand-total">0</span></h4>
                 </div>
               </div>
               <div class="space-y-4">
-                <h3 class="font-bold">Passenger Name*</h3>
-                <label
-                  id="name-box"
-                  class="input input-bordered flex items-center gap-2"
-                >
+                <h3 class="font-bold">Passenger Name</h3>
+                <label class="input input-bordered flex items-center gap-2">
                   <input
+                    id="name-box"
                     type="text"
                     class="grow"
                     placeholder="Enter your name"
@@ -372,6 +381,7 @@
                   class="input input-bordered flex items-center gap-2"
                 >
                   <input
+                    id="name-box"
                     type="number"
                     class="grow"
                     placeholder="Enter your phone number"
@@ -462,7 +472,6 @@
         </nav>
       </div>
     </footer>
-
     <script src="./scripts/index.js"></script>
   </body>
 </html>

@@ -1,16 +1,16 @@
 const seats = document.getElementsByClassName("seat");
 let ticketSale = 0;
 const ticketPrice = 550;
-let nameInput = document.getElementById("name-box")
-let numInput = document.getElementById("num-box")
-console.log(nameInput);
-console.log(numInput)
+
+let numBox = document.getElementById("num-box");
+numBox.addEventListener("input", function (e) {
+    if (e.target.value && ticketSale >= 1) {
+        document.getElementById("next-btn").removeAttribute("disabled");
+    }
+})
 
 for (const seat of seats) {
     seat.addEventListener('click', function () {
-        if (ticketSale <= 4) {
-            document.getElementById("next-btn").removeAttribute("disabled");
-        }
         if (ticketSale < 4) {
             seat.classList.add("bg-[#1DD100]", "text-white");
 
@@ -52,6 +52,8 @@ for (const seat of seats) {
 
             let couponCode = document.getElementById("coupon-code");
 
+            document.getElementById("next-btn").removeAttribute("disabled");
+
             if (ticketSale === 4) {
                 document.getElementById("apply-btn").removeAttribute("disabled");
                 document.getElementById("apply-btn").addEventListener("click", function () {
@@ -59,10 +61,16 @@ for (const seat of seats) {
                         document.getElementById("grand-total").innerText = parseInt(grandPrice) - 0.15 * parseInt(grandPrice);
                         couponCode.value = "";
                         document.getElementById("coupon-input-box").classList.add("hidden");
+                        const discountPrice = 0.15 * parseInt(totalPrice);
+                        document.getElementById("discount-price").innerText = discountPrice;
+                        document.getElementById("discount-container").classList.remove("hidden");
                     } else if (couponCode.value === "Couple 20") {
                         document.getElementById("grand-total").innerText = parseInt(grandPrice) - 0.20 * parseInt(grandPrice);
                         couponCode.value = "";
                         document.getElementById("coupon-input-box").classList.add("hidden");
+                        const discountPrice = 0.20 * parseInt(totalPrice);
+                        document.getElementById("discount-price").innerText = discountPrice;
+                        document.getElementById("discount-container").classList.remove("hidden");
                     } else {
                         alert("Enter Valid Coupon Please");
                     }
